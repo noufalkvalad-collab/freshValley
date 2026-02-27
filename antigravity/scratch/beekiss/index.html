@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Kiss | Pure Forest Honey from Wayanad</title>
+    <meta name="description"
+        content="Experience the luxury of pure, raw forest honey collected from the pristine forests of Wayanad, Kerala. Untouched, unprocessed, 100% natural.">
+
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header id="main-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Bee Kiss</a>
+
+            <nav class="nav-links">
+                <a href="#story">Our Story</a>
+                <a href="#products">Shop</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#purity">Purity</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="cart-icon" id="cart-toggle" aria-label="Open Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count" id="cart-counter">0</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <img src="images/hero_forest_background.png" alt="Wayanad Forest" class="hero-bg">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content fade-up visible">
+            <div class="subtitle">100% Raw | Unprocessed | Forest Collected</div>
+            <h1>Pure Forest Honey.<br>Untouched by Compromise.</h1>
+            <div class="hero-buttons mt-4">
+                <a href="#products" class="btn btn-primary">Shop Now</a>
+                <a href="#story" class="btn btn-outline">Our Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story-section" id="story">
+        <div class="container story-grid">
+            <div class="img-premium fade-up">
+                <img src="images/founder_story_image.png" alt="Honey gatherer in Wayanad forest">
+            </div>
+
+            <div class="story-content fade-in">
+                <h2>Born in the deep forests of Wayanad</h2>
+                <p>Generations of tribal gatherers have walked the dense, mist-covered canopies of Kerala's Western
+                    Ghats. Their knowledge of the forest is ancient, their respect for the bees, absolute.</p>
+                <p>Bee Kiss is not farmed. It is wild-harvested from naturally occurring hives high in the canopy,
+                    ensuring the bees' natural diet of rare medicinal flora remains undisturbed. This is honey as nature
+                    intended—thick, dark, complex, and profoundly nourishing.</p>
+                <div class="mt-4">
+                    <p class="font-heading italic text-gold">"We don't make honey. We simply protect what the forest
+                        provides."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <h2 class="fade-up">Our Collections</h2>
+            <p class="mb-4 fade-up">Limited harvest. Purest form.</p>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <article class="product-card fade-up">
+                    <a href="product.html" class="product-image d-block">
+                        <img src="images/premium_honey_bottle.png" alt="Bee Kiss Pure Honey Bottle">
+                    </a>
+                    <div class="product-details">
+                        <a href="product.html" style="text-decoration: none;">
+                            <h3 class="product-title">Wild Forest Honey</h3>
+                        </a>
+                        <div class="product-price" id="price-bottle">₹ 850</div>
+
+                        <div class="product-weights" data-product="bottle">
+                            <button class="weight-option active" data-weight="250g" data-price="850">250g</button>
+                            <button class="weight-option" data-weight="500g" data-price="1600">500g</button>
+                            <button class="weight-option" data-weight="1kg" data-price="3100">1kg</button>
+                        </div>
+
+                        <div class="product-actions">
+                            <button class="btn btn-primary btn-add-cart" data-id="p1" data-name="Wild Forest Honey"
+                                data-type="bottle">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card fade-up" style="transition-delay: 0.1s;">
+                    <div class="product-image">
+                        <img src="images/honey_stick_packaging.png" alt="Bee Kiss 10g Honey Stick">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">On-The-Go Honey Sticks</h3>
+                        <div class="product-price" id="price-sticks">₹ 350</div>
+                        <p class="text-sm text-gray mt-2 mb-3">Perfect 10g portions for pure energy anywhere.</p>
+
+                        <div class="product-weights" data-product="sticks">
+                            <button class="weight-option active" data-weight="Box of 10" data-price="350">Box of
+                                10</button>
+                            <button class="weight-option" data-weight="Box of 30" data-price="950">Box of 30</button>
+                        </div>
+
+                        <div class="product-actions mt-auto">
+                            <button class="btn btn-primary btn-add-cart" data-id="p2" data-name="On-The-Go Honey Sticks"
+                                data-type="sticks">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Bee Kiss Section -->
+    <section class="why-section" id="why-us">
+        <div class="container">
+            <h2 class="fade-up">Why Bee Kiss is Different</h2>
+
+            <div class="features-grid">
+                <div class="feature-item fade-up">
+                    <i class="fa-solid fa-leaf feature-icon"></i>
+                    <h3>100% Raw & Unfiltered</h3>
+                    <p>Never heated above hive temperature. All natural enzymes and pollen remain intact.</p>
+                </div>
+
+                <div class="feature-item fade-up" style="transition-delay: 0.1s;">
+                    <i class="fa-solid fa-ban feature-icon"></i>
+                    <h3>No Sugar Feeding</h3>
+                    <p>Our bees forage freely on wild forest flora. Zero artificial feeding, strictly natural.</p>
+                </div>
+
+                <div class="feature-item fade-up" style="transition-delay: 0.2s;">
+                    <i class="fa-solid fa-tree feature-icon"></i>
+                    <h3>Forest Collected</h3>
+                    <p>Ethically sourced from deep within the Wayanad biosphere reserve, away from pollution.</p>
+                </div>
+
+                <div class="feature-item fade-up" style="transition-delay: 0.3s;">
+                    <i class="fa-solid fa-flask feature-icon"></i>
+                    <h3>Lab Tested</h3>
+                    <p>Every batch is rigorously tested for NMR compliance to guarantee absolute purity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purity Education Section -->
+    <section class="purity-section" id="purity">
+        <div class="container purity-content fade-in">
+            <h2>The Truth About Crystallization</h2>
+            <p>If your Bee Kiss honey crystallizes, celebrate! It is the ultimate proof of purity.</p>
+            <p>Real, raw honey naturally solidifies over time due to its high natural glucose content and presence of
+                beneficial pollen. Only highly processed, heated, and ultra-filtered commercial honey stays perfectly
+                liquid forever.</p>
+            <p class="mt-4"><small>To return crystallized honey to liquid state, simply place the jar in warm water.
+                    Never microwave.</small></p>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <h2 class="fade-up">Trusted by Connoisseurs</h2>
+
+            <div class="reviews-slider fade-in">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"The taste is unlike anything you get in supermarkets. It has deep floral
+                        notes and a thick texture. Truly premium."</p>
+                    <p class="review-author">- Anjali R.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"I use the honey sticks before my marathon training. Pure, instant energy
+                        without the crash. The packaging is beautiful."</p>
+                    <p class="review-author">- Vikram S.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Finally found a brand I can trust. The fact that it crystallized in winter
+                        proved to me it's 100% raw and real."</p>
+                    <p class="review-author">- Priya M.</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"I gift this to all my corporate clients now. The packaging feels like a
+                        luxury perfume, and the honey inside matches the hype."</p>
+                    <p class="review-author">- Rahul K.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <span class="footer-logo">Bee Kiss</span>
+                    <p class="footer-desc">Pure forest honey, untamed and unbroken from the Western Ghats to your table.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#products">Wild Forest Honey</a></li>
+                        <li><a href="#products">Honey Sticks</a></li>
+                        <li><a href="#">Corporate Gifting</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#why-us">Sourcing</a></li>
+                        <li><a href="#purity">Purity Tests</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return & Refund Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; <span id="year">2026</span> Bee Kiss. All rights reserved. Premium Forest Honey from Wayanad.
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/910000000000" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Cart Slide-out Sidebar -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart" aria-label="Close Cart">&times;</button>
+        </div>
+
+        <div class="cart-items" id="cart-items-container">
+            <!-- Cart items will be injected here via JS -->
+            <p class="text-center text-muted mt-4" id="empty-cart-msg">Your cart is beautifully empty.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Subtotal:</span>
+                <span id="cart-total-amount">₹ 0</span>
+            </div>
+            <a href="checkout.html" class="btn btn-primary btn-checkout" id="checkout-btn"
+                style="pointer-events: none; opacity: 0.5;">Proceed to Checkout</a>
+        </div>
+    </aside>
+
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

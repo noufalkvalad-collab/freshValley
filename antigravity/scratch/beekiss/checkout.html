@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout | Bee Kiss</title>
+
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .checkout-section {
+            padding: var(--space-xl) 0;
+            background-color: var(--color-cream-white);
+            min-height: calc(100vh - 80px);
+            /* header roughly */
+        }
+
+        .checkout-header {
+            text-align: center;
+            margin-bottom: var(--space-lg);
+            margin-top: calc(var(--space-xl) + 60px);
+            /* Account for fixed header */
+        }
+
+        .checkout-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-lg);
+            align-items: start;
+        }
+
+        @media (min-width: 992px) {
+            .checkout-grid {
+                grid-template-columns: 1.5fr 1fr;
+            }
+        }
+
+        .checkout-form,
+        .order-summary {
+            background-color: white;
+            padding: var(--space-md);
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(15, 46, 29, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: var(--space-sm);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--color-forest-dark);
+            font-size: 0.9rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: var(--border-radius);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: border-color var(--transition-fast);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--color-honey-gold);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-sm);
+        }
+
+        .order-summary h3 {
+            margin-bottom: var(--space-md);
+            padding-bottom: var(--space-sm);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            color: var(--color-forest-dark);
+        }
+
+        .summary-items {
+            margin-bottom: var(--space-md);
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--color-text-dark);
+        }
+
+        .summary-totals {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding-top: var(--space-md);
+        }
+
+        .summary-total-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .summary-total-row.grand-total {
+            font-size: 1.25rem;
+            font-family: var(--font-heading);
+            color: var(--color-forest-dark);
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .payment-methods {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .payment-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .razorpay-logo {
+            height: 25px;
+            margin-left: auto;
+        }
+
+        .back-to-shop {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+        }
+
+        .back-to-shop:hover {
+            color: var(--color-honey-gold);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation (Simplified for checkout) -->
+    <header id="main-header" class="scrolled">
+        <div class="container nav-container" style="justify-content: center;">
+            <a href="index.html" class="logo">Bee Kiss</a>
+        </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-header fade-up">
+                <a href="index.html" class="back-to-shop"><i class="fa-solid fa-arrow-left"></i> Return to Shop</a>
+                <h1>Secure Checkout</h1>
+            </div>
+
+            <div class="checkout-grid">
+                <!-- Shipping Details -->
+                <div class="checkout-form fade-up" style="transition-delay: 0.1s;">
+                    <h3 class="mb-4 text-forest">Shipping Information</h3>
+
+                    <form id="checkout-form" onsubmit="return false;">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required placeholder="you@example.com">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" class="form-control" required
+                                placeholder="Street address, apartment, suite, etc.">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" class="form-control" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="state">State</label>
+                                <select id="state" class="form-control" required>
+                                    <option value="" disabled selected>Select State</option>
+                                    <option value="KL">Kerala</option>
+                                    <option value="MH">Maharashtra</option>
+                                    <option value="DL">Delhi</option>
+                                    <option value="KA">Karnataka</option>
+                                    <option value="TN">Tamil Nadu</option>
+                                    <!-- Add others as needed -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="pincode">PIN Code</label>
+                                <input type="text" id="pincode" class="form-control" required pattern="[0-9]{6}">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required placeholder="+91">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary fade-up" style="transition-delay: 0.2s;">
+                    <h3>Order Summary</h3>
+
+                    <div class="summary-items" id="checkout-items">
+                        <!-- Items rendered via JS -->
+                        <div class="text-center text-muted" id="checkout-empty-msg">Loading items...</div>
+                    </div>
+
+                    <div class="summary-totals">
+                        <div class="summary-total-row">
+                            <span>Subtotal</span>
+                            <span id="checkout-subtotal">₹ 0</span>
+                        </div>
+                        <div class="summary-total-row">
+                            <span>Shipping</span>
+                            <span>Calculated at next step</span>
+                        </div>
+                        <div class="summary-total-row grand-total">
+                            <span>Total</span>
+                            <span id="checkout-total">₹ 0</span>
+                        </div>
+                    </div>
+
+                    <div class="payment-methods">
+                        <div class="payment-method">
+                            <input type="radio" id="razorpay" name="payment" checked>
+                            <label for="razorpay" style="font-weight: 500;">Pay via Razorpay</label>
+                            <!-- Placeholder icon for Razorpay -->
+                            <div style="margin-left:auto; display:flex; gap: 5px; color:#3395FF;">
+                                <i class="fa-brands fa-cc-visa fa-lg"></i>
+                                <i class="fa-brands fa-cc-mastercard fa-lg"></i>
+                                <i class="fa-solid fa-building-columns fa-lg"></i>
+                            </div>
+                        </div>
+                        <p class="text-sm text-muted mt-2 ml-4 pl-1" style="font-size: 0.8rem; margin-left: 24px;">
+                            Credit Card, UPI, NetBanking, Wallets securely processed by Razorpay.</p>
+                    </div>
+
+                    <button class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1.2rem;"
+                        id="btn-pay-now">Pay Now securely</button>
+
+                    <div class="text-center mt-3 text-muted" style="font-size: 0.8rem;">
+                        <p><i class="fa-solid fa-lock"></i> 100% Secure Encrypted Transaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Simplified) -->
+    <footer>
+        <div class="container text-center">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                &copy; <span id="year">2026</span> Bee Kiss. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Checkout Logic -->
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+[0] (67,59)<a class='logo' href='index.html'>Bee Kiss />
+[1] (432,59)<a href='#story'>Our Story />
+[2] (512,59)<a href='#products'>Shop />
+[3] (581,59)<a href='#why-us'>Why Us />
+[4] (657,59)<a href='#purity'>Purity />
+[5] (971,59)<button aria-label='Open Cart' class='cart-icon' id='cart-toggle' />
+	[6] (971,58)<i  />
+	[7] (980,41)<span >0 />
+Born in the deep forests of Wayanad
+Generations of tribal gatherers have walked the dense, mist-covered canopies of Kerala's Western Ghats. Their knowledge of the forest is ancient, their respect for the bees, absolute.
+Bee Kiss is not farmed. It is wild-harvested from naturally occurring hives high in the canopy, ensuring the bees' natural diet of rare medicinal flora remains undisturbed. This is honey as nature intended—thick, dark, complex, and profoundly nourishing.
+"We don't make honey. We simply protect what the forest provides."
+[8] (953,910)<a aria-label='Chat with us on WhatsApp' class='whatsapp-float' href='https://wa.me/910000000000' />
+	[9] (953,910)<i  />

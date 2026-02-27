@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Forest Honey | Bee Kiss</title>
+
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-dark">
+
+    <!-- Header Navigation -->
+    <header id="main-header" class="scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Bee Kiss</a>
+            <div class="header-actions">
+                <button class="cart-icon" id="cart-toggle" aria-label="Open Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count" id="cart-counter">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="product-page-section">
+        <div class="container product-detail-grid">
+
+            <!-- Image Gallery with Zoom -->
+            <div class="product-gallery fade-up">
+                <div class="zoom-container" id="zoom-container">
+                    <img src="images/premium_honey_bottle.png" alt="Wild Forest Honey Premium Jar" class="zoom-img"
+                        id="zoom-img">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info fade-up" style="transition-delay: 0.1s;">
+                <nav class="breadcrumb text-muted mb-3" style="font-size: 0.85rem;">
+                    <a href="index.html" class="hover-text-gold">Home</a> &nbsp;/&nbsp;
+                    <span class="text-light">Shop</span> &nbsp;/&nbsp;
+                    <span class="text-gold">Wild Forest Honey</span>
+                </nav>
+
+                <h1>Wild Forest Honey</h1>
+                <p class="emotional-headline">"The purest essence of the Wayanad canopy."</p>
+
+                <div class="review-stars-small text-gold mb-4" style="font-size: 0.9rem;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="text-light ml-2" style="font-family: var(--font-body);">(124 Reviews)</span>
+                </div>
+
+                <div class="product-price-large" id="main-price">
+                    ₹ 850 <span class="original-price" id="compare-price">₹ 1050</span>
+                </div>
+                <p class="text-muted text-sm mb-4">Tax included. Shipping calculated at checkout.</p>
+
+                <!-- Bullet Benefits -->
+                <ul class="benefits-list">
+                    <li><i class="fa-solid fa-check"></i> 100% Raw & Unfiltered</li>
+                    <li><i class="fa-solid fa-check"></i> Forest Harvested</li>
+                    <li><i class="fa-solid fa-check"></i> No Sugar Feeding</li>
+                    <li><i class="fa-solid fa-check"></i> Naturally Crystallizes</li>
+                </ul>
+
+                <!-- Weight Selection -->
+                <div class="mb-4">
+                    <label class="d-block mb-2 font-weight-500 text-light" style="font-size: 0.9rem;">Select
+                        Weight:</label>
+                    <div class="product-weights" data-product="bottle">
+                        <button class="weight-option active" data-weight="250g" data-price="850"
+                            data-compare="1050">250g</button>
+                        <button class="weight-option" data-weight="500g" data-price="1600"
+                            data-compare="2000">500g</button>
+                        <button class="weight-option" data-weight="1kg" data-price="3100"
+                            data-compare="3800">1kg</button>
+                    </div>
+                </div>
+
+                <!-- Delivery Estimate -->
+                <div class="delivery-estimate">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div>
+                        <div class="font-weight-600 text-light">Fast Pan-India Delivery</div>
+                        <div class="text-muted text-sm">Order now, estimated delivery between <strong
+                                id="est-date-1">...</strong> and <strong id="est-date-2">...</strong></div>
+                    </div>
+                </div>
+
+                <!-- Add to Cart -->
+                <button class="btn btn-primary btn-add-cart w-100"
+                    style="width: 100%; font-size: 1.1rem; padding: 1.25rem;" data-id="p1" data-name="Wild Forest Honey"
+                    data-type="bottle">
+                    Add to Cart &nbsp;&bull;&nbsp; <span id="btn-price">₹ 850</span>
+                </button>
+
+                <!-- Trust Badges -->
+                <div class="trust-badges mt-4">
+                    <div class="trust-row">
+                        <div class="trust-item">
+                            <i class="fa-solid fa-certificate" style="color:#C6F432;"></i>
+                            <span>FSSAI<br>Certified</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fa-solid fa-shield-halved" style="color:#4CAF50;"></i>
+                            <span>100% Secure<br>Payments</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fa-solid fa-box-open" style="color:#FFC107;"></i>
+                            <span>Sustainable<br>Packaging</span>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3 text-muted" style="font-size: 0.8rem;">
+                        Guaranteed Checkout via Razorpay
+                        <div class="payment-icons mt-1">
+                            <i class="fa-brands fa-cc-visa fa-lg"></i>
+                            <i class="fa-brands fa-cc-mastercard fa-lg"></i>
+                            <i class="fa-brands fa-google-pay fa-lg"></i>
+                            <i class="fa-solid fa-wallet fa-lg"></i>
+                            <i class="fa-solid fa-money-bill-wave fa-lg" title="Cash on Delivery"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description & Reviews Full Width -->
+            <div style="grid-column: 1 / -1;">
+                <div class="product-reviews-section fade-up">
+                    <div class="review-summary">
+                        <div>
+                            <h2 class="text-gold">Why our customers love it</h2>
+                            <div class="review-stars-large">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span class="text-light ml-2"
+                                    style="font-size: 1.25rem; font-family: var(--font-body);">4.9 / 5.0</span>
+                            </div>
+                            <p class="text-muted mt-2">Based on 124 verified reviews</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-2 mt-4">
+                        <div class="single-review">
+                            <div class="text-gold mb-2"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="font-weight-600 text-light mb-1">Authentic and Rich</p>
+                            <p class="text-muted text-sm mb-3">Arjun M. - <i
+                                    class="fa-solid fa-circle-check text-gold"></i> Verified Buyer</p>
+                            <p>"The thickness and complex floral taste of this honey is unmatched. It crystallized
+                                exactly as real honey should during the winter. A truly premium product."</p>
+                        </div>
+
+                        <div class="single-review">
+                            <div class="text-gold mb-2"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="font-weight-600 text-light mb-1">Beautiful Packaging</p>
+                            <p class="text-muted text-sm mb-3">Neha S. - <i
+                                    class="fa-solid fa-circle-check text-gold"></i> Verified Buyer</p>
+                            <p>"I bought this as a gift for Diwali and ended up keeping it for myself! The luxurious
+                                feel of the jar combined with the taste makes it worth every rupee."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Simplified -->
+    <footer>
+        <div class="container text-center text-muted text-sm pb-4">
+            &copy; 2026 Bee Kiss. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/910000000000" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Sticky Mobile Buy Now -->
+    <div class="sticky-buy-container d-md-none">
+        <button class="btn btn-primary sticky-buy-btn" onclick="document.querySelector('.btn-add-cart').click();">
+            Buy Now &nbsp;&bull;&nbsp; <span id="sticky-btn-price">₹ 850</span>
+        </button>
+    </div>
+
+    <!-- Cart Slide-out Sidebar from app.js will attach here -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart" aria-label="Close Cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p class="text-center text-muted mt-4" id="empty-cart-msg">Your cart is beautifully empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Subtotal:</span>
+                <span id="cart-total-amount">₹ 0</span>
+            </div>
+            <a href="checkout.html" class="btn btn-primary w-100" id="checkout-btn"
+                style="pointer-events: none; opacity: 0.5;">Proceed to Checkout</a>
+        </div>
+    </aside>
+
+    <script src="js/app.js"></script>
+    <script>
+        // Zoom Effect JS
+        const zoomContainer = document.getElementById('zoom-container');
+        const zoomImg = document.getElementById('zoom-img');
+
+        zoomContainer.addEventListener('mousemove', (e) => {
+            const { left, top, width, height } = zoomContainer.getBoundingClientRect();
+            // Calculate cursor position as a percentage
+            const x = ((e.clientX - left) / width) * 100;
+            const y = ((e.clientY - top) / height) * 100;
+
+            // Set the transform-origin based on cursor position
+            zoomImg.style.transformOrigin = `${x}% ${y}%`;
+        });
+
+        // Delivery Dates Math
+        const today = new Date();
+        const date1 = new Date(today.getTime() + (3 * 24 * 60 * 60 * 1000));
+        const date2 = new Date(today.getTime() + (5 * 24 * 60 * 60 * 1000));
+
+        const options = { month: 'short', day: 'numeric' };
+        document.getElementById('est-date-1').textContent = date1.toLocaleDateString('en-IN', options);
+        document.getElementById('est-date-2').textContent = date2.toLocaleDateString('en-IN', options);
+
+        // Intercept weight option clicks on this specific page to update all price labels
+        document.querySelectorAll('.weight-option').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const target = e.target;
+                const price = target.dataset.price;
+                const compare = target.dataset.compare;
+
+                // Update main display
+                document.getElementById('main-price').innerHTML = `₹ ${price} <span class="original-price">₹ ${compare}</span>`;
+
+                // Update button texts
+                document.getElementById('btn-price').textContent = `₹ ${price}`;
+                const stickyBtnPrice = document.getElementById('sticky-btn-price');
+                if (stickyBtnPrice) stickyBtnPrice.textContent = `₹ ${price}`;
+            });
+        });
+    </script>
+</body>
+
+</html>

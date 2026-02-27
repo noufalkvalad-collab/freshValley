@@ -1,0 +1,12 @@
+[0] (67,59)<a class='logo' href='index.html'>Bee Kiss />
+[1] (432,59)<a href='#story'>Our Story />
+[2] (512,59)<a href='#products'>Shop />
+[3] (581,59)<a href='#why-us'>Why Us />
+[4] (657,59)<a href='#purity'>Purity />
+[5] (971,59)<button aria-label='Open Cart' class='cart-icon' id='cart-toggle' />
+	[6] (971,58)<i  />
+	[7] (980,41)<span >0 />
+Our Collections
+Limited harvest. Purest form.
+[8] (953,910)<a aria-label='Chat with us on WhatsApp' class='whatsapp-float' href='https://wa.me/910000000000' />
+	[9] (953,910)<i  />

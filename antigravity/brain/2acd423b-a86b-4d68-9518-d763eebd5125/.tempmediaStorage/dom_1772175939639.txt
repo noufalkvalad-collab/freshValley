@@ -1,0 +1,41 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Bee Kiss
+Our Story
+Shop
+Why Us
+Purity
+2
+Wild Forest Honey
+₹ 850
+250g
+500g
+1kg
+Add to Cart
+On-The-Go Honey Sticks
+₹ 350
+Perfect 10g portions for pure energy anywhere.
+Box of 10
+Box of 30
+Add to Cart
+Your Cart
+[0] (957,107)<button aria-label='Close Cart' class='close-cart' id='close-cart'>× />
+[1] (844,432)<div class='cart-items' id='cart-items-container' scrollable='true' />
+	₹ 850
+	-
+	1
+	+
+	On-The-Go Honey Sticks
+	Box of 10
+	₹ 350
+	[2] (816,413)<button class='qty-btn'>- />
+	1
+	[3] (852,413)<button class='qty-btn'>+ />
+	[4] (932,335)<button class='cart-item-remove'>Remove />
+Subtotal:
+₹ 1200
+[5] (844,886)<a class='btn btn-primary btn-checkout' href='checkout.html' id='checkout-btn'>Proceed to Checkout />
+
+</current_dom>

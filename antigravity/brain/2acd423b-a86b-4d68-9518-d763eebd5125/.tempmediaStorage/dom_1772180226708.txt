@@ -1,0 +1,21 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (67,71)<a class='logo' href='index.html'>Bee Kiss />
+[1] (426,71)<a href='#story'>Our Story />
+[2] (506,71)<a href='#products'>Shop />
+[3] (575,71)<a href='#why-us'>Why Us />
+[4] (651,71)<a href='#purity'>Purity />
+[5] (959,71)<button aria-label='Open Cart' class='cart-icon' id='cart-toggle' />
+	[6] (959,70)<i  />
+	[7] (968,53)<span >1 />
+100% Raw | Unprocessed | Forest Collected
+Pure Forest Honey.
+Untouched by Compromise.
+[8] (415,752)<a class='btn btn-primary' href='#products'>Shop Now />
+[9] (571,752)<a class='btn btn-outline' href='#story'>Our Story />
+[10] (941,910)<a aria-label='Chat with us on WhatsApp' class='whatsapp-float' href='https://wa.me/910000000000' />
+	[11] (941,910)<i  />
+
+</current_dom>

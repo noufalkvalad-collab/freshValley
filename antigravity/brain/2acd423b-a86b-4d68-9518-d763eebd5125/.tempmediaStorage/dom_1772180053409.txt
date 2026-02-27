@@ -1,0 +1,9 @@
+[0] (67,59)<a class='logo' href='index.html'>Bee Kiss />
+[1] (971,59)<button aria-label='Open Cart' class='cart-icon' id='cart-toggle' />
+	[2] (971,58)<i  />
+	[3] (980,41)<span >1 />
+[4] (241,755)<div  />
+	[5] (241,755)<img  />
+[6] (552,343)<a class='hover-text-gold' href='index.html' />
+[7] (953,910)<a aria-label='Chat with us on WhatsApp' class='whatsapp-float' href='https://wa.me/910000000000' />
+	[8] (953,910)<i  />

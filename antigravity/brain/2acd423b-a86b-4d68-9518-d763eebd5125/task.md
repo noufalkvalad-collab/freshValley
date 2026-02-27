@@ -1,0 +1,36 @@
+# Bee Kiss Premium E-Commerce Website
+
+- [ ] Project Setup & Planning
+  - [x] Define requirements and project structure
+  - [x] User review of plan
+- [ ] Asset Generation
+  - [/] Generate premium honey product images using AI
+  - [ ] Generate hero background and story images
+- [x] Core Design System (Vanilla CSS)
+  - [x] Setup variables (colors: #0F2E1D, #D4A017, cream white)
+  - [x] Typography setup (Serif headers, Sans-serif body)
+  - [x] Base styles, utility classes, and animations
+- [x] Structure & Layout (HTML)
+  - [x] Setup valid HTML5 boilerplate with SEO tags
+  - [x] Build Header & Navigation
+  - [x] Build Hero Section
+  - [x] Build Our Story Section
+  - [x] Build Products Section
+  - [x] Build Why Bee Kiss Section
+  - [x] Build Purity Education Section
+  - [x] Build Reviews Section
+  - [x] Build Footer
+- [x] Cart System & Interactivity (JavaScript)
+  - [x] Implement cart state management (localStorage)
+  - [x] Cart slide-out or modal UI
+  - [x] Add to cart functionality & weight selector logic
+  - [x] Checkout page / flow with Razorpay placeholder
+- [x] Verification
+  - [x] Test responsiveness
+  - [x] Test cart flow
+  - [x] Verify animations and premium feel
+- [x] Premium Product Page
+  - [x] Create product.html structure
+  - [x] Implement image zoom CSS/JS
+  - [x] Sticky mobile Buy Now button
+  - [x] Trust badges and delivery estimates
